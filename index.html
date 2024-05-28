@@ -232,6 +232,9 @@
   
   </script> -->
   <script>
+    $(function(){
+    $("#navbar").load("navigation.html"); 
+  });
     document.addEventListener("DOMContentLoaded", function() {
         // Determine the language based on the current page
         var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
