@@ -231,20 +231,14 @@
   
   
   </script> -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(function(){
-      // Load the navigation HTML
-      $("#navbar").load("navigation.html"); 
-    });
-  
     document.addEventListener("DOMContentLoaded", function() {
       // Determine the language based on the current page
       var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
       
       // Set the selected language text in the dropdown button
       document.getElementById("selectedLanguage").textContent = lang;
-  
+    
       // Handle form submission
       const form = document.getElementById("contact-form");
       form.addEventListener("submit", async function(event) {
@@ -277,7 +271,8 @@
         document.body.removeChild(link);
       });
     });
-  </script>
+    </script>
+    
   
 
 </body>
