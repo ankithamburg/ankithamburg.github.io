@@ -14,17 +14,6 @@
 </head>
 <body>
 <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/banner2.jpg">
-  <!-- Language dropdown -->
-<!--   <div class="dropdown" style="position: absolute; top: 20px; right: 20px;">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Language
-    </button>
-    <div class="dropdown-menu" aria-labelledby="languageDropdown">
-      <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
-      <a class="dropdown-item" href="#" onclick="setLanguage('de')">Deutsch</a>
-    </div>
-  </div> -->
-
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container"> 
       <!-- Brand --> 
@@ -42,7 +31,7 @@
           </button>
           <div class="dropdown-menu" aria-labelledby="languageDropdown">
               <a class="dropdown-item" href="index.html">English</a>
-              <!-- <a class="dropdown-item" href="index_de.html">Deutsch</a> -->
+              <a class="dropdown-item" href="index_de.html">Deutsch</a>
           </div>
       </div>
         <ul class="navbar-nav ml-auto">
@@ -231,18 +220,6 @@
   
   });
   
-  function setLanguage(lang) {
-  // Get all elements with the attribute data-lang
-  const elements = document.querySelectorAll('[data-lang]');
-  
-  // Loop through each element
-  elements.forEach(function(element) {
-    // Get the corresponding language text based on the selected language
-    const newText = lang === 'de' ? element.getAttribute('data-de') : element.getAttribute('data-en');
-    // Update the textContent of the element
-    element.textContent = newText;
-  });
-}
   </script>
   </body>
   </html>

@@ -24,16 +24,17 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
       
       <!-- Navbar links -->
-      <div class="dropdown" style="position: absolute; top: 10px; right: 20px;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <!-- This span will be used to display the selected language -->
-            <span id="selectedLanguage">Language</span>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="languageDropdown">
-            <a class="dropdown-item" href="index.html">English</a>
-            <!-- <a class="dropdown-item" href="index_de.html">Deutsch</a> -->
-        </div>
-    </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="dropdown" style="position: absolute; top: 10px; right: 20px;">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- This span will be used to display the selected language -->
+              <span id="selectedLanguage">Language</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="index.html">English</a>
+              <a class="dropdown-item" href="index_de.html">Deutsch</a>
+          </div>
+      </div>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
@@ -115,7 +116,7 @@
   <footer class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 footer1 div class="d-flex wow bounceInLeft" data-wow-delay=".25s">
+        <div class="col-md-3 footer1 wow bounceInLeft" data-wow-delay=".25s">
           <div class="d-flex flex-wrap align-content-center">
             <p>Promote your body, nurture your soul: Where fitness and nutrition come together for a vibrant life.</p>
             <p>&copy; 2018 Foxpro. All rights reserved.<br> Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
@@ -220,36 +221,6 @@
     
   });
   
-/*   function setLanguage(lang) {
-    // Get all elements that need translation
-    const elements = document.querySelectorAll('[data-translate]');
-
-    // Define translations
-    const translations = {
-        'de': {
-            'welcome': 'Beginnen Sie jetzt Ihre Reise!!',
-            'home': 'Startseite',
-            'about': 'Über',
-            'structure': 'Struktur',
-            'contact': 'Kontakt'
-            // Add more translations as needed
-        },
-        'en': {
-            'welcome': 'Start your journey now!!',
-            'home': 'Home',
-            'about': 'About',
-            'structure': 'Structure',
-            'contact': 'Contact'
-            // Add more translations as needed
-        }
-    };
-
-    // Update text content based on the selected language
-    elements.forEach(function(element) {
-        const key = element.getAttribute('data-translate');
-        element.textContent = translations[lang][key];
-    });
-} */
   </script>
 </body>
 </html>

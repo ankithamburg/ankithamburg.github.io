@@ -24,6 +24,16 @@
       
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="dropdown" style="position: absolute; top: 10px; right: 20px;">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- This span will be used to display the selected language -->
+              <span id="selectedLanguage">Language</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="index.html">English</a>
+              <a class="dropdown-item" href="index_de.html">Deutsch</a>
+          </div>
+      </div>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
           <li class="nav-item"> <a class="nav-link" href="index.html#about-us">About</a> </li>
