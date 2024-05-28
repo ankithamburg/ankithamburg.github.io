@@ -185,7 +185,7 @@
   <script src="js/wow.js"></script>
   <script src="js/main.js"></script>
   
-  <script>
+  <!-- <script>
         $(function(){
     $("#navbar").load("navigation.html"); 
   });
@@ -230,6 +230,54 @@
   });
   
   
-  </script>
+  </script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function(){
+    // Load the navigation HTML
+    $("#navbar").load("navigation.html"); 
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Determine the language based on the current page
+    var lang = window.location.pathname.includes("index.html") ? "English" : "Deutsch";
+    
+    // Set the selected language text in the dropdown button
+    document.getElementById("selectedLanguage").textContent = lang;
+
+    // Handle form submission
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      if (response.ok) {
+        document.getElementById("success-message").style.display = "block";
+        form.reset();
+      } else {
+        alert("Oops! There was a problem submitting your form");
+      }
+    });
+  
+    // PDF download functionality
+    document.getElementById("download-link").addEventListener("click", function(event) {
+      event.preventDefault();
+      const pdfUrl = "pdfs/schedule.pdf";
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = 'schedule.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  });
+</script>
+
 </body>
 </html>
