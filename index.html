@@ -25,7 +25,7 @@
       
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <div class="dropdown" style="position: absolute; top: 10px; right: 20px;">
+        <div class="dropdown ml-auto">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <!-- This span will be used to display the selected language -->
               <span id="selectedLanguage">English</span>
@@ -43,12 +43,11 @@
           <li class="nav-item"> <a class="nav-link" href="faq.html">FAQs</a> </li>
           
         </ul>
-        <div id="navbar"></div>
       </div>
     </div>
   </nav>
   <div class="container">
-    <div class="fh5co-banner-text-box">
+    <div class="fh5co-banner-text-box text-center">
       <div class="quote-box pl-5 pr-5 wow bounceInRight">
         <h2> Start your journey now!!</h2>
       </div>
@@ -61,7 +60,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="wow bounceInRight">WHAT YOU WILL RECEIVE</h2>
+        <h2 class="wow bounceInRight text-center">WHAT YOU WILL RECEIVE</h2>
         <hr />
       </div>
     </div>
@@ -94,7 +93,7 @@
 
 <div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="images/about-us-bg.jpg">
   <div class="container">
-    <div class="col-sm-6 offset-sm-6">
+    <div class="col-lg-6 offset-lg-6">
       <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT ME</h2>
       <hr/>
       <p class="wow bounceInRight" data-wow-delay=".25s">Get ready to sculpt your dream figure and fuel your body for success! As your personal trainer, I'm here to push your limits and unlock your full potential. From intense workouts to customized nutrition plans, together we'll redefine what strength looks and feels like. Let's reach those goals and count every rep!!</p>
@@ -127,152 +126,104 @@
         <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
           <div class="form-box">
             <h4>CONTACT US</h4>
-            <table class="table table-responsive d-table">
+            <table class="table table-responsive">
               <form id="contact-form" class="wow bounceInRight" data-wow-delay=".25s" action="https://formspree.io/f/xqkrodwa" method="POST">
                 <tr>
                   <td><input name="name" type="text" class="form-control pl-0" placeholder="NAME" /></td>
-                  <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADDRESS" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="2"><input type="text" name="message" class="form-control pl-0" placeholder="MESSAGE" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
-                </tr>
-              </form>
-            </table>
-            <div id="success-message" class="alert alert-success" role="alert" style="display:none;">
-              Your message has been sent successfully!
+                  <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" /></td
+                    <tr>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADDRESS" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><textarea name="message" class="form-control pl-0" placeholder="MESSAGE"></textarea></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
+                    </tr>
+                  </form>
+                </table>
+                <div id="success-message" class="alert alert-success" role="alert" style="display:none;">
+                  Your message has been sent successfully!
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+              <h5>PHONE</h5>
+              <p>253232323232</p>
+              <h5>EMAIL</h5>
+              <p>ankitinhamburg@gmail.com</p>
+              <div class="social-links">
+                <ul class="nav">
+                  <li class="nav-item"><a href="https://www.instagram.com/ankit.hamburg/" target="_blank" style="background-color: transparent;"><img src="images/instagram.png" alt="instagram" /></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
-          <h5>PHONE</h5>
-          <p>253232323232</p>
-          <h5>EMAIL</h5>
-          <p>ankitinhamburg@gmail.com</p>
-          <div class="social-links">
-            <ul class="nav nav-item">
-              <li><a href="https://www.instagram.com/ankit.hamburg/" target="_blank" style="background-color: transparent;"><img src="images/instagram.png" alt="instagram" /></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- jQuery library -->
-  <script src="js/jquery.min.js"></script>
-  
-  <!-- Bootstrap JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-  
-  <!-- Other JavaScript files -->
-  <script src="js/parallax.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/main.js"></script>
-  
-  <!-- <script>
-        $(function(){
-    $("#navbar").load("navigation.html"); 
-  });
-  document.addEventListener("DOMContentLoaded", function() {
-
-    var lang = window.location.pathname.includes("index.html") ? "English" : "Deutsch";
-    
-    // Set the selected language text in the dropdown button
-    document.getElementById("selectedLanguage").textContent = lang;
-
-    const form = document.getElementById("contact-form");
-    form.addEventListener("submit", async function(event) {
-      event.preventDefault();
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-      if (response.ok) {
-        document.getElementById("success-message").style.display = "block";
-        form.reset();
-      } else {
-        alert("Oops! There was a problem submitting your form");
-      }
-    });
-  
-    // PDF download functionality
-    document.getElementById("download-link").addEventListener("click", function(event) {
-      event.preventDefault();
-      const pdfUrl = "pdfs/schedule.pdf";
-      const link = document.createElement('a');
-      link.href = pdfUrl;
-      link.download = 'schedule.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-    
-  });
-  
-  
-  </script> -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Determine the language based on the current page
-        var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
-        
-        // Set the selected language text in the dropdown button
-        document.getElementById("selectedLanguage").textContent = lang;
+      </footer>
       
-        // Handle form submission
-        const form = document.getElementById("contact-form");
-        form.addEventListener("submit", async function(event) {
-          event.preventDefault();
-          const formData = new FormData(form);
-          const response = await fetch(form.action, {
-            method: form.method,
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-          if (response.ok) {
-            document.getElementById("success-message").style.display = "block";
-            form.reset();
-          } else {
-            alert("Oops! There was a problem submitting your form");
-          }
-        });
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- jQuery library -->
+      <script src="js/jquery.min.js"></script>
       
-        // PDF download functionality
-        document.getElementById("download-link").addEventListener("click", function(event) {
-          event.preventDefault();
-          const pdfUrl = "pdfs/schedule.pdf";
-          const link = document.createElement('a');
-          link.href = pdfUrl;
-          link.download = 'schedule.pdf';
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
+      <!-- Bootstrap JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      
+      <!-- Other JavaScript files -->
+      <script src="js/parallax.js"></script>
+      <script src="js/wow.js"></script>
+      <script src="js/main.js"></script>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Determine the language based on the current page
+            var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
+            
+            // Set the selected language text in the dropdown button
+            document.getElementById("selectedLanguage").textContent = lang;
+          
+            // Handle form submission
+            const form = document.getElementById("contact-form");
+            form.addEventListener("submit", async function(event) {
+              event.preventDefault();
+              const formData = new FormData(form);
+              const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                  'Accept': 'application/json'
+                }
+              });
+              if (response.ok) {
+                document.getElementById("success-message").style.display = "block";
+                form.reset();
+              } else {
+                alert("Oops! There was a problem submitting your form");
+              }
+            });
+          
+            // PDF download functionality
+            document.getElementById("download-link").addEventListener("click", function(event) {
+              event.preventDefault();
+              const pdfUrl = "pdfs/schedule.pdf";
+              const link = document.createElement('a');
+              link.href = pdfUrl;
+              link.download = 'schedule.pdf';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            });
         });
-    });
-    </script>
-  
-
-</body>
-</html>
+      </script>
+    </body>
+    </html>
+    
