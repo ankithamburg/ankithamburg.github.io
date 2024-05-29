@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bg-img {
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    .parallax-window2 {
+      background-attachment: fixed;
+    }
+    .parallax-window{
+    
+    background-attachment: fixed;
+    }
+  </style>
 </head>
 <body>
   <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/banner2.jpg">
@@ -134,7 +148,7 @@
       <td colspan="2"></td>
     </tr>
     <tr>
-      <td colspan="2"><textarea name="message" class="form-control pl-0" placeholder="MESSAGE"></textarea></td>
+      <td colspan="2"><input type="text" name="message" class="form-control pl-0" placeholder="MESSAGE"></td>
     </tr>
     <tr>
       <td colspan="2"></td>
@@ -165,44 +179,50 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
+      document.getElementById("selectedLanguage").textContent = lang;
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
-document.getElementById("selectedLanguage").textContent = lang;
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          document.getElementById("success-message").style.display = "block";
+          form.reset();
+        } else {
+          alert("Oops! There was a problem submitting your form");
+        }
+      });
 
-const form = document.getElementById("contact-form");
-form.addEventListener("submit", async function(event) {
-event.preventDefault();
-const formData = new FormData(form);
-const response = await fetch(form.action, {
-method: form.method,
-body: formData,
-headers: { 'Accept': 'application/json' }
-});
-if (response.ok) {
-document.getElementById("success-message").style.display = "block";
-form.reset();
-} else {
-alert("Oops! There was a problem submitting your form");
-}
-});
+      document.getElementById("download-link").addEventListener("click", function(event) {
+        event.preventDefault();
+        const pdfUrl = "pdfs/schedule.pdf";
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'schedule.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
 
-document.getElementById("download-link").addEventListener("click", function(event) {
-event.preventDefault();
-const pdfUrl = "pdfs/schedule.pdf";
-const link = document.createElement('a');
-link.href = pdfUrl;
-link.download = 'schedule.pdf';
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
-});
-});
-</script>
+      // Initialize WOW.js for animation
+      new WOW().init();
+
+      // Initialize Parallax
+      $('.parallax-window2').parallax({ imageSrc: 'images/banner2.jpg' });
+      $('.parallax-window').parallax({ imageSrc: 'images/about-us-bg.jpg' });
+    });
+  </script>
 </body>
 </html>
