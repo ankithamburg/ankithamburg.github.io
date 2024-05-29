@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container-fluid pl-0 pr-0 bg-img clearfix" data-parallax="scroll" data-image-src="images/banner2.jpg">
+  <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window"" data-parallax="scroll" data-image-src="images/banner2.jpg">
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -83,7 +83,7 @@
 </div>
 </div>
 
-<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" src="images/about-us-bg.jpg">
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0" data-parallax="scroll" src="images/about-us-bg.jpg">
 <div class="container">
 <div class="col-lg-6 offset-lg-6">
 <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT ME</h2>
@@ -175,9 +175,12 @@
   <script src="js/smoothscroll.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      var parallaxElements = document.querySelectorAll("[data-parallax='scroll']");
+      
       var scroll = new SmoothScroll('a[href*="#"]');
       var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
       document.getElementById("selectedLanguage").textContent = lang;
+
 
       const form = document.getElementById("contact-form");
       form.addEventListener("submit", async function(event) {
@@ -206,13 +209,6 @@
         link.click();
         document.body.removeChild(link);
       });
-
-      // Initialize WOW.js for animation
-      new WOW().init();
-
-      // Initialize Parallax
-     /*  $('.parallax-window2').parallax({ imageSrc: 'images/banner2.jpg' });
-      $('.parallax-window').parallax({ imageSrc: 'images/about-us-bg.jpg' }); */
     });
   </script>
 </body>
