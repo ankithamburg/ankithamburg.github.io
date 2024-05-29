@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1>
   <title>Start your journey now!!</title>
   <link href="css/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -186,8 +186,10 @@
   <script src="js/parallax.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/smoothscroll.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      var scroll = new SmoothScroll('a[href*="#"]');
       var lang = window.location.pathname.includes("index.html") || window.location.pathname === "/" ? "English" : "Deutsch";
       document.getElementById("selectedLanguage").textContent = lang;
 
