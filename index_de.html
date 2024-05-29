@@ -15,32 +15,31 @@
 <body>
 <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/banner2.jpg">
   <nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container"> 
+    <div class="container">
       <!-- Brand --> 
       <!-- <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" alt="FoxPro" /></a>  -->
       
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
-      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <div class="dropdown" style="position: absolute; top: 10px; right: 20px;">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <!-- This span will be used to display the selected language -->
-              <span id="selectedLanguage">Deutsch</span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="languageDropdown">
-              <a class="dropdown-item" href="index.html">English</a>
-              <!-- <a class="dropdown-item" href="index_de.html">Deutsch</a> -->
-          </div>
-      </div>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#about-us">Über</a> </li>
           <li class="nav-item"> <a class="nav-link" href="structure_de.html">Struktur</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#contact">Kontakt</a> </li>
-          
         </ul>
+        <div class="dropdown ml-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="selectedLanguage">Deutsch</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="index.html">English</a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -102,125 +101,124 @@
 <div class="container-fluid fh5co-content-box">
   <div class="container">
     <div class="row">
-      <div class="col-md-5 pr-0"><img src="images/rode-gym.jpg" alt="gym" class="img-fluid wow bounceInLeft" /> </div>
+      <div class="col-md-5 pr-0">
+        <img src="images/rode-gym.jpg" alt="gym" class="img-fluid wow bounceInLeft" />
+      </div>
       <div class="col-md-7 pl-0">
         <div class="wow bounceInRight" data-wow-delay=".25s">
             <img src="images/gym-girls.jpg" alt="girls in gym" class="img-fluid" /> 
-          </div>
         </div>
       </div>
     </div>
   </div>
-  
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 footer1 div class="d-flex wow bounceInLeft" data-wow-delay=".25s">
-          <div class="d-flex flex-wrap align-content-center">
-            <p>Fördern Sie Ihren Körper, pflegen Sie Ihre Seele: Wo Fitness und Ernährung für ein lebendiges Leben zusammenkommen.</p>
-            <p>&copy; 2018 Foxpro. Alle Rechte vorbehalten.<br> Design von <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
-          </div>
+</div>
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+        <div class="d-flex flex-wrap align-content-center">
+          <p>Fördern Sie Ihren Körper, pflegen Sie Ihre Seele: Wo Fitness und Ernährung für ein lebendiges Leben zusammenkommen.</p>
+          <p>&copy; 2018 Foxpro. Alle Rechte vorbehalten.<br> Design von <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
         </div>
-        <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
-          <div class="form-box">
-            <h4>KONTAKTIERE UNS</h4>
-            <table class="table table-responsive d-table">
-              <form id="contact-form" class="wow bounceInRight" data-wow-delay=".25s" action="https://formspree.io/f/xqkrodwa" method="POST">
-                <tr>
-                  <td><input name="name" type="text" class="form-control pl-0" placeholder="NAME" /></td>
-                  <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADRESSE" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="2"><input type="text" name="message" class="form-control pl-0" placeholder="NACHRICHTEN" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SENDEN</button></td>
-                </tr>
-              </form>
-            </table>
-            <div id="success-message" class="alert alert-success" role="alert" style="display:none;">
-              Ihre Nachricht wurde erfolgreich gesendet!
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
-          <h5>TELEFON</h5>
-          <p>253232323232</p>
-          <h5>E-MAIL</h5>
-          <p>ankitinhamburg@gmail.com</p>
-          <div class="social-links">
-            <ul class="nav nav-item">
-              <li><a href="https://www.instagram.com/ankit.hamburg/" target="_blank" style="background-color: transparent;"><img src="images/instagram.png" alt="instagram" /></a></li>
-            </ul>
+      </div>
+      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
+        <div class="form-box">
+          <h4>KONTAKTIERE UNS</h4>
+          <table class="table table-responsive d-table">
+            <form id="contact-form" class="wow bounceInRight" data-wow-delay=".25s" action="https://formspree.io/f/xqkrodwa" method="POST">
+              <tr>
+                <td><input name="name" type="text" class="form-control pl-0" placeholder="NAME" /></td>
+                <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" /></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADRESSE" /></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="text" name="message" class="form-control pl-0" placeholder="NACHRICHTEN" /></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SENDEN</button></td>
+              </tr>
+            </form>
+          </table>
+          <div id="success-message" class="alert alert-success" role="alert" style="display:none;">
+            Ihre Nachricht wurde erfolgreich gesendet!
           </div>
         </div>
       </div>
+      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+        <h5>TELEFON</h5>
+        <p>253232323232</p>
+        <h5>E-MAIL</h5>
+        <p>ankitinhamburg@gmail.com</p>
+        <div class="social-links">
+          <ul class="nav nav-item">
+            <li><a href="https://www.instagram.com/ankit.hamburg/" target="_blank" style="background-color: transparent;"><img src="images/instagram.png" alt="instagram" /></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Other JavaScript files -->
+<script src="js/parallax.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var lang = window.location.pathname.includes("index.html") ? "English" : "Deutsch";
   
-  <!-- jQuery library -->
-  <script src="js/jquery.min.js"></script>
+  // Set the selected language text in the dropdown button
+  document.getElementById("selectedLanguage").textContent = lang;
   
-  <!-- Bootstrap JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-  
-  <!-- Other JavaScript files -->
-  <script src="js/parallax.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var lang = window.location.pathname.includes("index.html") ? "English" : "Deutsch";
-    
-    // Set the selected language text in the dropdown button
-    document.getElementById("selectedLanguage").textContent = lang;
-    
-    const form = document.getElementById("contact-form");
-    form.addEventListener("submit", async function(event) {
-      event.preventDefault();
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-      if (response.ok) {
-        document.getElementById("success-message").style.display = "block";
-        form.reset();
-      } else {
-        alert("Oops! Es gab ein Problem beim Absenden Ihres Formulars");
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
       }
     });
-  
-    // PDF download functionality
-    document.getElementById("download-link").addEventListener("click", function(event) {
-      event.preventDefault();
-      const pdfUrl = "pdfs/schedule.pdf";
-      const link = document.createElement('a');
-      link.href = pdfUrl;
-      link.download = 'schedule.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-  
+    if (response.ok) {
+      document.getElementById("success-message").style.display = "block";
+      form.reset();
+    } else {
+      alert("Oops! Es gab ein Problem beim Absenden Ihres Formulars");
+    }
   });
-  
-  </script>
-  </body>
-  </html>
-  
+
+  // PDF download functionality
+  document.getElementById("download-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    const pdfUrl = "pdfs/schedule.pdf";
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'schedule.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+});
+</script>
+</body>
+</html>

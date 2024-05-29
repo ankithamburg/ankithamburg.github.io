@@ -4,7 +4,9 @@
  * Facebook: https://fb.com/fh5co
  * URL: https://freehtml5.co
  */
-
+ .navbar-nav .dropdown {
+  margin-left: auto;
+}
 body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
