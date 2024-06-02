@@ -1,0 +1,12 @@
+{
+    "en": {
+        "title": "Welcome to Our Website",
+        "description": "This is a simple example of a translated website.",
+        "training" : "example"
+    },
+    "de": {
+        "title": "Willkommen auf unserer Website",
+        "description": "Dies ist ein einfaches Beispiel für eine übersetzte Website.",
+        "training":"zum Beispiel"
+    }
+}
