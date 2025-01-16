@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Your custom CSS -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Your Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#about-us">About</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="structure.html">Structure</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#contact">Contact</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">FAQs</a> </li>
+            
+          </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ Items -->
+      <div class="card">
+        <div class="card-header" id="faqHeading1">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              Question 1?
+            </button>
+          </h5>
+        </div>
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body">
+            Answer 1.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add more FAQ items as needed -->
+      
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        &copy; 2024 Your Website Name
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
